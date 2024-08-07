@@ -51,6 +51,9 @@ r2libr = { version = "^5.7.4", optional = true }
 fuzz = ["unicornafl", "fuzzercorn"]
 RE = ["r2libr"]
 
+[tool.poetry.scripts]
+qltool = {reference = "qltool", type = "file"}
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
